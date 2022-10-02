@@ -62,8 +62,12 @@ Dark green: #28b485
   padding: 0;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
-  padding: 20px;
+  padding: 2rem;
 
   font-family: "lato", sans-serif;
 }
@@ -83,11 +87,11 @@ body {
 }
 
 .header__logo-box {
-  padding: 20px;
+  padding: 2rem;
 }
 
 .header__logo {
-  height: 30px;
+  height: 3rem;
 }
 
 .header__hero {
@@ -107,11 +111,11 @@ body {
 .header__primary-heading--title {
   display: block;
 
-  font-size: 36px;
+  font-size: 3.6rem;
   font-weight: 400;
-  letter-spacing: 20px;
-  text-indent: 20px;
-  line-height: 60px;
+  letter-spacing: 2rem;
+  text-indent: 2rem;
+  line-height: 6rem;
 
   animation: moveToRight 1s ease-in;
 }
@@ -121,17 +125,17 @@ body {
 
   font-size: 16px;
   font-weight: 700;
-  letter-spacing: 7.5px;
-  text-indent: 7.5px;
-  line-height: 26px;
+  letter-spacing: 0.75rem;
+  text-indent: 0.75rem;
+  line-height: 2.6rem;
 
   animation: moveToLeft 1s ease-in;
 }
 
 .header__btn-box {
-  margin-top: 50px;
+  margin-top: 5rem;
 
-  font-size: 16px;
+  font-size: 1.6rem;
   text-transform: uppercase;
   text-align: center;
 }
@@ -143,12 +147,12 @@ body {
 
   position: relative;
 
-  padding: 15px 40px;
+  padding: 1.5rem 4rem;
 
   background-color: white;
 
   border: none;
-  border-radius: 100px;
+  border-radius: 10rem;
 
   text-decoration: none;
   color: gray;
@@ -164,6 +168,10 @@ body {
   transform: translateY(-5%);
 
   box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.btn--animated:active {
+  transform: translateY(0%);
 }
 
 .btn--animated::after {
