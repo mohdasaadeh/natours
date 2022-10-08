@@ -1,0 +1,14 @@
+.about {
+  margin-top: -10vh;
+  padding: 15rem 0 5rem 0;
+
+  background-color: $grey-light-1;
+
+  &__heading {
+    text-align: center;
+  }
+
+  &__body {
+    padding: 10rem 10rem;
+  }
+}

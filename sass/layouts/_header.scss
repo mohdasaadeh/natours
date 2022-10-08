@@ -9,7 +9,7 @@
     ),
     url("../img/hero.jpg");
   background-size: cover;
-  clip-path: polygon(0 0, 0 100%, 100% 90%, 100% 0);
+  clip-path: polygon(0 0, 0 100%, 100% 80vh, 100% 0);
 
   &__logo {
     padding: 2rem;

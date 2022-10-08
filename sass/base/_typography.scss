@@ -21,3 +21,27 @@
 
   animation: moveToLeft 1s ease-in;
 }
+
+.heading-background {
+  display: inline-block;
+
+  background-image: linear-gradient(to right, $light-green, $dark-green);
+  -webkit-background-clip: text;
+  color: transparent;
+
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  font-weight: 700;
+
+  transition: all 0.2s;
+
+  &:hover {
+    transform: skewX(20deg) skewY(2deg) scale(1.1);
+  }
+}
+
+.heading-tertiary {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
