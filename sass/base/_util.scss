@@ -1,11 +1,55 @@
-.margin-top-small {
+.margin-t-sm {
   margin-top: 2rem;
 }
 
-.margin-top-medium {
+.margin-t-md {
   margin-top: 4rem;
+}
+
+.margin-b-sm {
+  margin-bottom: 2rem;
 }
 
 .relative {
   position: relative;
+}
+
+.padding-x-sm {
+  padding: 0 2rem;
+}
+
+.padding-x-md {
+  padding: 0 4rem;
+}
+
+.padding-x-2xl {
+  padding: 0 10rem;
+}
+
+.padding-y-sm {
+  padding: 2rem 0;
+}
+
+.align-y-center {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.align-x-center {
+  margin: 0 auto;
+}
+
+.width-full {
+  width: 100%;
+}
+
+.bg-light-grey {
+  background-color: $grey-light-1;
+}
+
+.text-center {
+  text-align: center;
 }

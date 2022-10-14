@@ -10,5 +10,28 @@
 
   &__body {
     padding: 10rem 10rem;
+
+    &--paragraph {
+      max-width: 40rem;
+    }
+  }
+}
+
+.features {
+  height: 90vh;
+  margin-top: -10vh;
+
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($light-green, 0.8),
+      rgba($dark-green, 0.8)
+    ),
+    url("../img/nat-4.jpg");
+  background-size: cover;
+
+  transform: skewY(-5deg);
+
+  & > div {
+    transform: skewY(5deg) translate(-50%, -50%);
   }
 }
