@@ -35,3 +35,17 @@
     transform: skewY(5deg) translate(-50%, -50%);
   }
 }
+
+.tours {
+  margin-top: -10vh;
+  padding: 20vh 0 10vh 0;
+
+  background-color: $grey-light-1;
+
+  text-align: center;
+
+  &__body {
+    margin: 10rem auto;
+    max-width: 95rem;
+  }
+}
