@@ -1,0 +1,129 @@
+.booking {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 40rem;
+  margin: 0 auto;
+
+  background-image: linear-gradient(
+      105deg,
+      rgba(white, 0.85) 0%,
+      rgba(white, 0.85) 50%,
+      transparent 50%
+    ),
+    url("../img/nat-10.jpg");
+  background-size: cover;
+  border-radius: 3px;
+
+  transform: translate(-50%, -50%);
+
+  &__heading {
+    margin: 4rem 4rem;
+  }
+
+  &__form {
+    margin: 3rem 4rem;
+
+    &--group {
+      &-input {
+        height: 4rem;
+        width: 30%;
+        padding: 0.5rem 1rem 0 1rem;
+
+        outline: none;
+        border: none;
+        cursor: pointer;
+        border-bottom: 5px solid transparent;
+        border-radius: 3px;
+
+        font-family: inherit;
+        font-size: 1.5rem;
+        color: inherit;
+
+        &::-webkit-input-placeholder {
+          font-size: 1.2rem;
+        }
+
+        &:focus:valid {
+          border-bottom: 5px solid $dark-green;
+        }
+
+        &:focus:invalid {
+          border-bottom: 5px solid $color-secondary-dark;
+        }
+
+        &:focus + .booking__form--group-label {
+          visibility: visible;
+          opacity: 1;
+
+          transform: translateY(0);
+        }
+      }
+
+      &-label {
+        display: block;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s;
+
+        padding: 0 1rem;
+        margin-top: 1rem;
+
+        font-size: 1.2rem;
+
+        transform: translateY(-4rem);
+      }
+
+      &-radio {
+        visibility: hidden;
+      }
+
+      &-label-radio {
+        display: inline-block;
+        cursor: pointer;
+
+        position: relative;
+        margin: 0 4rem 0 0;
+        padding-left: 1rem;
+
+        font-size: 1.5rem;
+
+        &-btn {
+          position: absolute;
+          width: 2rem;
+          height: 2rem;
+          top: 0;
+          left: -2rem;
+
+          border: 3px solid $dark-green;
+          border-radius: 10rem;
+
+          &::after {
+            content: "";
+            display: block;
+            opacity: 0;
+            transition: all 0.3s;
+
+            position: absolute;
+            width: 1.2rem;
+            height: 1.2rem;
+            top: 1px;
+            left: 1.5px;
+
+            background-color: $dark-green;
+            border-radius: 10rem;
+          }
+        }
+      }
+
+      &:not(:last-child) {
+        margin: 3rem 0;
+      }
+
+      &-radio:checked + &-label-radio &-label-radio-btn::after {
+        opacity: 1;
+      }
+    }
+  }
+}

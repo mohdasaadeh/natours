@@ -76,3 +76,12 @@
     }
   }
 }
+
+.bookings {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  padding: 5rem 0;
+
+  background-image: linear-gradient(to right bottom, $light-green, $dark-green);
+}
