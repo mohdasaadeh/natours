@@ -55,4 +55,16 @@
       transition: all 0.3s;
     }
   }
+
+  &--green {
+    &:link,
+    &:visited {
+      background-color: $medium-green;
+      color: white;
+    }
+
+    &::after {
+      background-color: $medium-green;
+    }
+  }
 }
