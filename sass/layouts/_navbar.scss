@@ -139,7 +139,7 @@
   }
 
   &__checkbox:checked ~ &__background {
-    transform: scale(60);
+    transform: scale(100);
   }
 
   &__checkbox:checked ~ &__content {
