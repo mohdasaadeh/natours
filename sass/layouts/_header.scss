@@ -7,7 +7,7 @@
       rgba($light-green, 0.8),
       rgba($dark-green, 0.8)
     ),
-    url("../img/hero.jpg");
+    url("../img/hero-small.jpg");
   background-size: cover;
   clip-path: polygon(0 0, 0 100%, 100% 80vh, 100% 0);
 
@@ -39,5 +39,15 @@
     font-size: 1.6rem;
     text-transform: uppercase;
     text-align: center;
+  }
+
+  @media (min-resolution: 192dpi) and (min-width: 37.5em),
+    (min-width: 112.5em) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($light-green, 0.8),
+        rgba($dark-green, 0.8)
+      ),
+      url("../img/hero.jpg");
   }
 }

@@ -121,19 +121,25 @@
           <div class="col-1-2">
             <div class="composition relative">
               <img
+                srcset="./img/nat-1-large.jpg 1000w, ./img/nat-1.jpg 300w"
+                sizes="(max-width: 600px) 300px, 1000px"
                 class="composition__img composition__img--1"
-                src="./img/nat-1-large.jpg"
                 alt="nature 1"
+                src="./img/nat-1-large.jpg"
               />
               <img
+                srcset="./img/nat-2-large.jpg 1000w, ./img/nat-2.jpg 300w"
+                sizes="(max-width: 600px) 300px, 1000px"
                 class="composition__img composition__img--2"
-                src="./img/nat-2-large.jpg"
                 alt="nature 2"
+                src="./img/nat-2-large.jpg"
               />
               <img
+                srcset="./img/nat-3-large.jpg 1000w, ./img/nat-3.jpg 300w"
+                sizes="(max-width: 600px) 300px, 1000px"
                 class="composition__img composition__img--3"
-                src="./img/nat-3-large.jpg"
                 alt="nature 3"
+                src="./img/nat-3-large.jpg"
               />
             </div>
           </div>
@@ -403,11 +409,22 @@
     </main>
     <footer class="footer">
       <div class="footer__logo">
-        <img
-          src="./img/logo-green-2x.png"
-          alt="natours"
-          class="footer__logo--img"
-        />
+        <picture class="footer__logo--img">
+          <source
+            media="(max-width: 600px)"
+            srcset="
+              ./img/logo-green-small-1x.png 1x,
+              ./img/logo-green-small-2x.png 2x
+            "
+            src="./img/logo-green-small-2x.png"
+          />
+          <img
+            srcset="./img/logo-green-1x.png 1x, ./img/logo-green-2x.png 2x"
+            alt="natours"
+            class="footer__logo--img"
+            src="./img/logo-green-2x.png"
+          />
+        </picture>
       </div>
       <div class="footer__content">
         <div class="row">
