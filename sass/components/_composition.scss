@@ -19,20 +19,39 @@
     &--1 {
       top: 0;
       left: 0;
+
+      @include respond(tab) {
+        top: -5rem;
+        left: -6rem;
+      }
     }
 
     &--2 {
       top: 3rem;
       left: 15rem;
+
+      @include respond(tab) {
+        top: -2rem;
+        left: 7rem;
+      }
     }
 
     &--3 {
       top: 7rem;
       left: 7rem;
+
+      @include respond(tab) {
+        top: 2rem;
+        left: 1rem;
+      }
     }
   }
 
   &:hover &__img:not(:hover) {
     transform: scale(0.9);
+  }
+
+  @include respond(tab) {
+    margin: 10rem auto 0 auto;
   }
 }

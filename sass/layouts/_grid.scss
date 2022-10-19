@@ -3,18 +3,6 @@
 
   max-width: 100%;
 
-  &:not(:last-child) {
-    margin-bottom: 2rem;
-  }
-
-  [class^="col-"] {
-    float: left;
-
-    &:not(:last-child) {
-      margin-right: $gutter-horizontal;
-    }
-  }
-
   .col-1-1 {
     width: 100%;
   }
@@ -47,5 +35,28 @@
     width: calc(
       3 * ((100% - 3 * #{$gutter-horizontal}) / 4) + 2 * #{$gutter-horizontal}
     );
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  [class^="col-"] {
+    float: left;
+
+    &:not(:last-child) {
+      margin-right: $gutter-horizontal;
+
+      @include respond(tab) {
+        margin-right: auto;
+      }
+    }
+
+    @include respond(tab) {
+      width: 100%;
+
+      float: none;
+      text-align: center;
+    }
   }
 }

@@ -8,6 +8,18 @@
   line-height: 6rem;
 
   animation: moveToRight 1s ease-in;
+
+  @include respond(tab) {
+    letter-spacing: 1rem;
+    text-indent: 1rem;
+    line-height: 8rem;
+  }
+
+  @include respond(phone) {
+    letter-spacing: 0.5rem;
+    text-indent: 0.5rem;
+    line-height: 6rem;
+  }
 }
 
 .heading-secondary {
@@ -20,6 +32,18 @@
   line-height: 2.6rem;
 
   animation: moveToLeft 1s ease-in;
+
+  @include respond(tab) {
+    letter-spacing: 0.5rem;
+    text-indent: 0.5rem;
+    line-height: 3rem;
+  }
+
+  @include respond(phone) {
+    letter-spacing: 0.25rem;
+    text-indent: 0.25rem;
+    line-height: 2.6rem;
+  }
 }
 
 .heading-background {

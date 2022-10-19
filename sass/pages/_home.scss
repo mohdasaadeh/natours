@@ -13,6 +13,14 @@
 
     &--paragraph {
       max-width: 40rem;
+
+      @include respond(tab) {
+        margin: 2rem auto 0 auto;
+      }
+    }
+
+    @include respond(tab) {
+      padding: 5rem 10rem 20rem 10rem;
     }
   }
 }
@@ -31,8 +39,32 @@
 
   transform: skewY(-5deg);
 
+  &__content {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    @include respond(tab) {
+      top: 54%;
+    }
+
+    @include respond(phone) {
+      top: 52%;
+    }
+  }
+
   & > div {
     transform: skewY(5deg) translate(-50%, -50%);
+  }
+
+  @include respond(tab) {
+    height: 100vh;
+  }
+
+  @include respond(phone) {
+    height: 80vh;
   }
 }
 
@@ -47,6 +79,10 @@
   &__body {
     margin: 10rem auto;
     max-width: 95rem;
+
+    @include respond(tab) {
+      margin: 5rem auto 0 auto;
+    }
   }
 }
 

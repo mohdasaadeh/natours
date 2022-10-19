@@ -52,6 +52,13 @@
       float: right;
 
       border-top: 2px solid rgb(209, 209, 209);
+
+      @include respond(tab) {
+        margin: 5rem auto;
+
+        float: none;
+        border: none;
+      }
     }
   }
 }

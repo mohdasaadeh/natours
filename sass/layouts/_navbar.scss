@@ -5,6 +5,11 @@
     right: 5.7rem;
 
     visibility: hidden;
+
+    @include respond(tab) {
+      top: 3rem;
+      right: 4.7rem;
+    }
   }
 
   &__label {
@@ -59,6 +64,11 @@
         transition: all 0.3s;
       }
     }
+
+    @include respond(tab) {
+      top: 1.5rem;
+      right: 3rem;
+    }
   }
 
   &__background {
@@ -74,6 +84,11 @@
     border-radius: 10rem;
 
     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    @include respond(tab) {
+      top: 2rem;
+      right: 3.5rem;
+    }
   }
 
   &__content {

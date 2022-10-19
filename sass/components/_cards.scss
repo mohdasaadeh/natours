@@ -41,6 +41,16 @@
 
     text-align: center;
   }
+
+  @include respond(tab) {
+    max-width: 40%;
+    margin: 0 auto;
+  }
+
+  @include respond(phone) {
+    max-width: 80%;
+    margin: 0 auto;
+  }
 }
 
 .card-rotated {
@@ -229,5 +239,10 @@
 
   &:hover &__side--front {
     transform: rotateY(-180deg);
+  }
+
+  @include respond(tab) {
+    margin: 0 auto;
+    max-width: 40rem;
   }
 }

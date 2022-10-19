@@ -1,6 +1,6 @@
 .story {
   position: relative;
-  width: 60rem;
+  max-width: 60rem;
   height: 15rem;
   margin: 5rem auto;
 
@@ -86,5 +86,18 @@
 
       transform: translateY(-2.5rem);
     }
+
+    @include respond(tab) {
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  @include respond(tab) {
+    transform: skew(0);
+  }
+
+  @include respond(phone) {
+    max-width: 50rem;
+    height: 20rem;
   }
 }
